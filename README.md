@@ -1,4 +1,4 @@
-# chromex-crx
+# gApi Chrome Extension
 
 > a chrome extension tools built with Vite + React, and Manifest v3
 
