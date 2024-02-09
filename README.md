@@ -13,15 +13,15 @@
 run the command
 
 ```shell
-$ cd chromex-crx
+$ cd gapi-crx
 
-$ npm run dev
+$ pnpm run dev
 ```
 
 ### Chrome Extension Developer Mode
 
 1. set your Chrome browser 'Developer mode' up
-2. click 'Load unpacked', and select `chromex-crx/build` folder
+2. click 'Load unpacked', and select `gapi-crx/build` folder
 
 ### Nomal FrontEnd Developer Mode
 
@@ -34,7 +34,7 @@ $ npm run dev
 After the development of your extension run the command
 
 ```shell
-$ npm run build
+$ pnpm run build
 ```
 
 Now, the content of `build` folder will be the extension ready to be submitted to the Chrome Web Store. Just take a look at the [official guide](https://developer.chrome.com/webstore/publish) to more infos about publishing.
