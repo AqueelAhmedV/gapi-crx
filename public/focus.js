@@ -1,0 +1,1 @@
+location = 'newtab.html'

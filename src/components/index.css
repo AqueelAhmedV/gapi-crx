@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+    transition: width 0.5s ease-in-out;
+}
+
+.hover-unblur:hover {
+    filter: none;
+}
+
+.album-syncing {
+    opacity: 1;
+    backdrop-filter: grayscale(100%) brightness(0.5);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+  color-scheme: light dark;
+  background-color: #242424;
+  --bgColorDark: #242424;
+  --bgUrl: none;
+  --bgX: 0;
+  --bgY: 0;
+  --bgFilter: filter(7px);
+  --bgSize: 100%;
+  --bgAnimation: bgBeforeFade 2s ease-in-out;
+  --bgAnimation1: bgBeforeFade 2s ease-in-out;
+  --bgOverlay: radial-gradient(circle at 24.1% 68.8%, rgba(50, 50, 50, 0.5) 0%, rgba(0, 0, 0, 0.5) 99.4%);
+  --mixBlend: luminosity;
+  --bgFilter1: brightness(50%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #fafafa;
+  }
+}
+
+
+body {
+  min-width: 20rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+  content: var(--bgUrl);   
+}

@@ -1,0 +1,54 @@
+{
+  "name": "gapi-crx",
+  "displayName": "GAPI",
+  "version": "0.0.0",
+  "author": "ncrypt",
+  "description": "Google API Integration",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "react",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fmt": "prettier --write '**/*.{jsx,js,json,css,scss,md}'",
+    "zip": "pnpm run build && node src/zip.js"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "axios": "^1.6.2",
+    "js-base64": "^3.7.5",
+    "million": "^2.6.4",
+    "moment": "^2.30.1",
+    "package.json": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.12",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.20.1",
+    "react-select": "^5.8.0",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "@vitejs/plugin-react": "^4.1.0",
+    "autoprefixer": "^10.4.16",
+    "glob": "^10.3.10",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^6.0.0",
+    "postcss": "^8.4.33",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.11"
+  }
+}

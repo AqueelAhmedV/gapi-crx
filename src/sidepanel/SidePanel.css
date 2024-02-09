@@ -1,0 +1,59 @@
+/* @media (prefers-color-scheme: light) {
+  a:hover {
+    color: #61dafb;
+  }
+}
+
+body::after {
+  content: var(--bgUrl);
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+} */
+
+main {
+  /* text-align: center; */
+  padding: 1em;
+  margin: 0 auto;
+  position: relative;
+}
+/* 
+main::before {
+  content: " ";
+  inset: 0;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-image: var(--bgUrl);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  filter: blur(5px) brightness(50%);
+  animation: var(--bgAnimation);
+  pointer-events: none;
+}
+
+h3 {
+  color: #61dafb;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.2rem;
+  margin: 2rem auto;
+}
+
+a {
+  font-size: 0.5rem;
+  margin: 0.5rem;
+  color: #cccccc;
+  text-decoration: none;
+} */
+
+@keyframes bgBeforeFade {
+  0% {
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+  }
+}

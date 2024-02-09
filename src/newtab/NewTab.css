@@ -1,0 +1,67 @@
+section::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--bgUrl);
+  background-size: var(--bgSize);
+  filter: var(--bgFilter);
+  animation: var(--bgAnimation);
+  transition: all 0.5s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: var(--bgX) var(--bgY);
+  
+}
+
+
+  
+
+
+section {
+  width: 100vw;
+  height: 100vh;
+  /* background: var(--bgOverlay); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  /* animation: var(--bgAnimation1); */
+  /* mix-blend-mode: var(--mixBlend); */
+  
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+
+.to-hide {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+a {
+  font-size: 0.5rem;
+  margin: 0.5rem;
+  color: #cccccc;
+  text-decoration: none;
+}
+
+@keyframes bgBeforeFade {
+  0% {
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+  }
+}
